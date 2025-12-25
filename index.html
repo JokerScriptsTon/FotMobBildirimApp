@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Futbol Bildirim Merkezi</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Futbol Bildirim</h1>
+            <p>Takımını seç, anında bildirim al!</p>
+        </header>
+
+        <main>
+            <section id="status-bar" class="card">
+                <div id="user-info">
+                    <span id="user-name">Yükleniyor...</span>
+                </div>
+            </section>
+
+            <section id="selection-section" class="card">
+                <h2>Takım Seçimi</h2>
+                <div class="search-container">
+                    <input type="text" id="team-search" placeholder="Takım ara... (Örn: Galatasaray)">
+                </div>
+                <div id="team-list" class="grid-list">
+                    <!-- Takımlar buraya dinamik gelecek -->
+                </div>
+            </section>
+
+            <section id="preferences-section" class="card hidden">
+                <button id="back-btn" class="secondary-btn">← Geri Dön</button>
+                <h2 id="selected-team-name">Takım Ayarları</h2>
+                <div class="options-list">
+                    <div class="option-item">
+                        <label>
+                            <input type="checkbox" name="notif-goal" checked>
+                            <span>Gol Bildirimleri</span>
+                        </label>
+                    </div>
+                    <div class="option-item">
+                        <label>
+                            <input type="checkbox" name="notif-card">
+                            <span>Kırmızı Kartlar</span>
+                        </label>
+                    </div>
+                    <div class="option-item">
+                        <label>
+                            <input type="checkbox" name="notif-half">
+                            <span>Devre Arası</span>
+                        </label>
+                    </div>
+                    <div class="option-item">
+                        <label>
+                            <input type="checkbox" name="notif-finish" checked>
+                            <span>Maç Sonucu</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="save-btn" class="primary-btn">Ayarları Kaydet</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Futbol Bildirim Botu</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
