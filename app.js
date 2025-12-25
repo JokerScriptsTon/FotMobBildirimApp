@@ -1,6 +1,6 @@
 // Telegram Web App SDK başlatma
 const tg = window.Telegram.WebApp;
-const GAS_URL = "https://script.google.com/macros/s/AKfycbxdjO1uqdeQxA62ffO3OFQ_39aU6NybVxDMTyX3iCDGnK-qNJmJsozkh3nwbdTUtn09dQ/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbzwhwUb_OZwFMgi4D1YW4VdsuI7cruXREHaGvY57xW6R30p_u88QzUpOpRRgMEOmZtQOA/exec";
 tg.expand(); // Uygulamayı tam ekran yap
 
 // Elementleri seçme
